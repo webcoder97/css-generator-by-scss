@@ -35,7 +35,7 @@ Run Compiler for production mode:
   npm run build
 ```
 
-## Screenshots
+<!-- ## Screenshots
 
 Unminfied CSS (dev Mode)
 
@@ -43,15 +43,36 @@ Unminfied CSS (dev Mode)
 
 Minified CSS (Production Mode)
 
-![App Screenshot](https://i.ibb.co/YtBxX4M/minfiy.png)
+![App Screenshot](https://i.ibb.co/YtBxX4M/minfiy.png) -->
+
 
 ## Usages
-```html
-<div class="mt-0">
+For margin use class = mt-$value
+Please Remember: $value increasing start from 5 to 30, 
+This means you can use last class = mt-150 and same as mr-$value, ml-$value, mb-$value,
+Please Note: mt= margin-top, mb= margin-bottom, mr= margin-right, ml= margin-left;
 
+```html
+<!-- for margin -->
+<div class="mt-0">
+  <p>you can use mt, mb, ml and mr classes, just write ml-50 for margin-left: 50px;</p>
 </div>
 
+<!-- for padding -->
+<div class="pt-0">
+  <p>you can use pt, pb, pl and pr classes, just write pl-50 for padding-left: 50px;</p>
+</div>
 ```
+if you need value more than 150, you can change easily
+```scss
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.mt-#{$i * 5} {
+	  margin-top: #{$remValue}rem;
+	}
+}
+```
+Just change value '30' to as your need.
 
 
 ## Authors

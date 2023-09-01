@@ -3,7 +3,7 @@ $baseFont: var(--body-font-size); // use your body font size;
 $maxPercentage: 100%;
 
 /* === margin top === */
-@for $i from 0 through 40 {
+@for $i from 0 through 30 {
 	$remValue: ($i * 5) / $baseFont;
 	.mt-#{$i * 5} {
 	  margin-top: #{$remValue}rem;
