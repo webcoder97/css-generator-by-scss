@@ -54,15 +54,18 @@ Please Note: mt= margin-top, mb= margin-bottom, mr= margin-right, ml= margin-lef
 
 ```html
 <!-- for margin -->
+
 <div class="mt-0">
   <p>you can use mt, mb, ml and mr classes, just write ml-50 for margin-left: 50px;</p>
 </div>
 
+
 <!-- for padding -->
+
 <div class="pt-0">
   <p>you can use pt, pb, pl and pr classes, just write pl-50 for padding-left: 50px;</p>
 </div>
-```
+
 if you need value more than 150, you can change easily
 ```scss
 @for $i from 0 through 30 {
@@ -73,6 +76,80 @@ if you need value more than 150, you can change easily
 }
 ```
 Just change value '30' to as your need.
+
+<!-- width % -->
+
+<div class="w-5">
+  <p>you can use it at last w-100, value is increasing from 5 to 100.</p>
+</div>
+
+
+<!-- height % -->
+
+<div class="h-10">
+  <p>you can use it at last h-100, value is increasing from 5 to 100.</p>
+</div>
+
+<!-- z-index -->
+
+<div class="z-1">
+  <p>z-1 for z-index: 1;</p>
+</div>
+
+<div class="z--1">
+  <p>z--1 for z-index: -1;</p>
+</div>
+
+
+<!-- position class -->
+
+<div class="relative">
+  <p>Just write position values in your class. i think you know all of position values.</p>
+  <pre>
+      relative,
+      absolute,
+      fixed,
+      sticky,
+      static
+  </pre>
+</div>
+
+
+<!-- absolute position class list -->
+
+<div class="top-0">
+  <p>You can use top-$value
+    Please Note: value not more 100; value start from 0 to 100; So you can use your need.
+  </p>
+  <pre>
+      top-$value,
+      left-$value,
+      right-$value,
+      bottom-$value
+  </pre>
+</div>
+
+
+<!-- text alignment -->
+
+<div class="center">
+  <p>
+    You can use text-align value name in your class.
+    Such as: left= text-align: left;
+  </p>
+</div>
+
+
+<!-- font-weight -->
+
+<div class="font-400">
+  <p>you can use font-weight property by using class font-$value
+    Please Note: font-weight start from 100 to 900;
+  </p>
+</div>
+
+```
+
 
 
 ## Authors
