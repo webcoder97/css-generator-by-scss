@@ -10,23 +10,25 @@ The classes are shown so that we can create the class as per our project require
 
 ## Installation
 
-Clone from github
+Clone from github:
 
 ```bash
   git clone https://github.com/webcoder97/css-generator-by-scss.git
   cd css-generator-by-scss
 ```
-npm initialize:
+npm install:
 ```bash
   npm init
+```
+Install Sass Compiler:
+```
+npm install node-sass --sass-dev
 ```
 
 Run Compiler for dev mode:
 ```bash
   npm run dev
 ```
-
-
 
 Run Compiler for production mode:
 ```bash
