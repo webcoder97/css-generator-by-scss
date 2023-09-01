@@ -1,0 +1,215 @@
+/* ============= margin and padding css generator ============== */
+$baseFont: var(--body-font-size); // use your body font size;
+$maxPercentage: 100%;
+
+/* === margin top === */
+@for $i from 0 through 40 {
+	$remValue: ($i * 5) / $baseFont;
+	.mt-#{$i * 5} {
+	  margin-top: #{$remValue}rem;
+	}
+}
+// example class Name: mt-100
+
+
+/* === margin bottom === */
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.mb-#{$i * 5} {
+	  margin-bottom: #{$remValue}rem;
+	}
+}
+
+// example class Name: mb-100
+
+
+/* === margin left === */
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.ml-#{$i * 5} {
+	  margin-left: #{$remValue}rem;
+	}
+}
+// example class Name: ml-100
+
+
+/* === margin right === */
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.mr-#{$i * 5} {
+	  margin-right: #{$remValue}rem;
+	}
+}
+
+// example class Name: mr-100
+
+/* === padding right === */
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.pr-#{$i * 5} {
+	  padding-right: #{$remValue}rem;
+	}
+}
+
+// example class Name: pr-100
+
+/* === padding left === */
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.pl-#{$i * 5} {
+	  padding-left: #{$remValue}rem;
+	}
+}
+
+// example class Name: pl-100
+
+/* === padding top === */
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.pt-#{$i * 5} {
+	  padding-top: #{$remValue}rem;
+	}
+}
+
+// example class Name: pt-100
+
+/* === padding bottom === */
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.pb-#{$i * 5} {
+	  padding-bottom: #{$remValue}rem;
+	}
+}
+
+// example class Name: pb-100
+
+/* ==== width css generator ==== */
+
+@for $i from 0 through 20 {
+	$percentageValue: ($i * 5);
+  
+	// Ensure the percentage value does not exceed the maximum
+	$clampedPercentage: min($percentageValue, $maxPercentage);
+  
+	.w-#{$i * 5} {
+	  width: $clampedPercentage;
+	}
+}
+
+// example class Name: w-20
+/* === height css generator === */
+@for $i from 0 through 20 {
+	$percentageValue: ($i * 5);
+  
+	// Ensure the percentage value does not exceed the maximum
+	$clampedPercentage: min($percentageValue, $maxPercentage);
+  
+	.height-#{$i * 5} {
+	  height: $clampedPercentage;
+	}
+}
+
+// example class Name: h-5
+
+/* ==== border radius generator ==== */
+@for $i from 0 through 24 {
+	$borderRadiusValue: $i * 2;
+	.radius-#{$borderRadiusValue} {
+	  border-radius: $borderRadiusValue;
+	}
+}
+
+// example class Name: radius-4;
+
+/* ==== z-index css generator ==== */
+
+@for $i from -9 through 9 {
+	.z-#{$i} {
+	  z-index: $i;
+	}
+}
+// example class Name: z-1, z--9
+
+
+
+/* === position class Name generator === */
+$positions: (
+  relative,
+  absolute,
+  fixed,
+  sticky,
+  static
+);
+
+@each $position in $positions {
+  .#{$position} {
+    position: $position;
+  }
+}
+// example class Name: relative;
+
+/* === position helper css generator === */
+$positions: (
+  top,
+  left,
+  right,
+  bottom
+);
+
+@each $position in $positions {
+  @for $value from 0 through 100 {
+    .#{$position}-#{$value} {
+      #{$position}: $value * 1px;
+    }
+  }
+}
+
+// example class Name: top-0;
+
+/* === text alignment css generator === */
+$textAlignValues: (
+  left,
+  center,
+  right,
+  justify
+);
+
+@each $textAlign in $textAlignValues {
+  .#{$textAlign} {
+    text-align: $textAlign;
+  }
+}
+// example class Name: center;
+
+
+/* === flex css generator === */
+$flexProperties: (
+  "display": ("flex", "inline-flex"),
+  "flex-direction": ("row", "row-reverse", "column", "column-reverse"),
+  "flex-wrap": ("nowrap", "wrap", "wrap-reverse"),
+  "justify-content": ("flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly"),
+  "align-items": ("flex-start", "flex-end", "center", "baseline", "stretch"),
+  "align-content": ("flex-start", "flex-end", "center", "space-between", "space-around", "stretch")
+);
+
+@each $property, $values in $flexProperties {
+  @each $value in $values {
+    .#{$property}-#{$value} {
+      #{$property}: $value;
+    }
+  }
+}
+// example class Name: display-flex
+
+/* === font weight css generator === */
+$fontWeights: (
+  100, 200, 300, 400, 500, 600, 700, 800, 900
+);
+
+@each $weight in $fontWeights {
+  .font-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+// example class Name: font-400

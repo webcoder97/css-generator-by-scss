@@ -1,0 +1,11 @@
+# Hide Readme file
+.md
+#hid text file
+.txt
+
+#hide node modules
+node_modules
+
+#hide package-lock 
+
+package-lock.json
