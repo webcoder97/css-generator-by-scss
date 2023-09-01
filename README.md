@@ -66,7 +66,7 @@ Please Note: mt= margin-top, mb= margin-bottom, mr= margin-right, ml= margin-lef
   <p>you can use pt, pb, pl and pr classes, just write pl-50 for padding-left: 50px;</p>
 </div>
 ```
-if you need value more than 150, you can change easily
+if you need value more than 150, you can change easily.
 ```scss
 @for $i from 0 through 30 {
 	$remValue: ($i * 5) / $baseFont;
@@ -75,8 +75,9 @@ if you need value more than 150, you can change easily
 	}
 }
 ```
-Just change value '30' to as your need.
+Just go to css-most-needed-class-generator.scss file change value '30' to as your need. it's same for padding.
 
+##
 
 ```html
 <!-- width % -->
