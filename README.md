@@ -65,7 +65,7 @@ Please Note: mt= margin-top, mb= margin-bottom, mr= margin-right, ml= margin-lef
 <div class="pt-0">
   <p>you can use pt, pb, pl and pr classes, just write pl-50 for padding-left: 50px;</p>
 </div>
-
+```
 if you need value more than 150, you can change easily
 ```scss
 @for $i from 0 through 30 {
@@ -77,6 +77,8 @@ if you need value more than 150, you can change easily
 ```
 Just change value '30' to as your need.
 
+
+```html
 <!-- width % -->
 
 <div class="w-5">
