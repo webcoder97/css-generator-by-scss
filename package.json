@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/webcoder97/css-most-needed-class-gerator#readme",
   "dependencies": {
-    "node-sass": "^9.0.0",
-    "sass": "^1.66.1"
+    "node-sass": "^9.0.0"
   }
 }
