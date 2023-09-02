@@ -82,6 +82,22 @@ $maxPercentage: 100%;
 
 // example class Name: pb-100
 
+/* ===== padding both side =====*/
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.p-#{$i * 5} {
+	  padding: #{$remValue}rem;
+	}
+}
+
+/* ===== margin both side =====*/
+@for $i from 0 through 30 {
+	$remValue: ($i * 5) / $baseFont;
+	.m-#{$i * 5} {
+	  margin: #{$remValue}rem;
+	}
+}
+
 /* ==== width css generator ==== */
 
 @for $i from 0 through 20 {
