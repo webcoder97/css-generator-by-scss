@@ -85,7 +85,7 @@ $maxPercentage: 100%;
 /* ==== width css generator ==== */
 
 @for $i from 0 through 20 {
-	$percentageValue: ($i * 5);
+	$percentageValue: ($i * 5%);
   
 	// Ensure the percentage value does not exceed the maximum
 	$clampedPercentage: min($percentageValue, $maxPercentage);
@@ -98,7 +98,7 @@ $maxPercentage: 100%;
 // example class Name: w-20
 /* === height css generator === */
 @for $i from 0 through 20 {
-	$percentageValue: ($i * 5);
+	$percentageValue: ($i * 5%);
   
 	// Ensure the percentage value does not exceed the maximum
 	$clampedPercentage: min($percentageValue, $maxPercentage);
