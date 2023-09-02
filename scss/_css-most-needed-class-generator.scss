@@ -111,14 +111,14 @@ $maxPercentage: 100%;
 // example class Name: h-5
 
 /* ==== border radius generator ==== */
-@for $i from 0 through 24 {
-	$borderRadiusValue: $i * 2;
+@for $i from 0 through 50 {
+	$borderRadiusValue: $i * 2px;
 	.radius-#{$borderRadiusValue} {
 	  border-radius: $borderRadiusValue;
 	}
 }
 
-// example class Name: radius-4;
+// example class Name: radius-4px;
 
 /* ==== z-index css generator ==== */
 

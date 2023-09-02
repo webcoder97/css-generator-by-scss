@@ -93,6 +93,12 @@ Just go to css-most-needed-class-generator.scss file change value '30' to as you
   <p>you can use it at last h-100, value is increasing from 5 to 100.</p>
 </div>
 
+<!-- border radius -->
+
+<div class="radius-4">
+  <p>you can use it at last radius-2, value is increasing from 2 to 100.</p>
+</div>
+
 <!-- z-index -->
 
 <div class="z-1">
